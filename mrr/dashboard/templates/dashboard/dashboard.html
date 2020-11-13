@@ -1,0 +1,97 @@
+{% extends "dashboard/base.html" %}
+
+    {% block content %}
+        <div class="mt-2">
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+                <div class="card">                    
+                    <div class="card-body">
+                        {% with "dashboard/mrr.html" as mrr %}
+                            {% include mrr %}                
+                        {% endwith %}                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+                <div class="card">                    
+                    <div class="card-body">
+                        {% with "dashboard/new_mrr.html" as new_mrr %}
+                            {% include new_mrr %}                
+                        {% endwith %}                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+                <div class="card">                    
+                    <div class="card-body">
+                        {% with "dashboard/expansion_mrr.html" as expansion_mrr %}
+                            {% include expansion_mrr %}                
+                        {% endwith %}                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+                <div class="card">                    
+                    <div class="card-body">
+                        {% with "dashboard/ressurected_mrr.html" as ressurected_mrr %}
+                            {% include ressurected_mrr %}                
+                        {% endwith %}                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+                <div class="card">                    
+                    <div class="card-body">
+                        {% with "dashboard/contraction_mrr.html" as contraction_mrr %}
+                            {% include contraction_mrr %}                
+                        {% endwith %}                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+                <div class="card">                    
+                    <div class="card-body">
+                        {% with "dashboard/canceled_mrr.html" as canceled_mrr %}
+                            {% include canceled_mrr %}                
+                        {% endwith %}                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-1"></div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="card">                    
+                    <div class="card-body">
+                        {% with "dashboard/receita_localidade.html" as receita_localidade %}
+                            {% include receita_localidade %}                
+                        {% endwith %}                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                <div class="card">                    
+                    <div class="card-body">
+                        {% with "dashboard/tendencia_mrr.html" as tendencia_mrr %}
+                            {% include tendencia_mrr %}                
+                        {% endwith %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-1"></div>
+        <div clas="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="card">                    
+                    <div class="card-body">
+                        {% with "dashboard/cli_localidade.html" as cli_localidade %}
+                            {% include cli_localidade %}                
+                        {% endwith %}                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    {% endblock content %}
+        
