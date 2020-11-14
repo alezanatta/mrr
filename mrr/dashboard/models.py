@@ -288,13 +288,13 @@ class FatoSegmento(models.Model):
     vl_cancelamento = models.DecimalField(default=0.0, max_digits=10, decimal_places=2)
 
     @staticmethod
-    def segmento_cancelamento(self, dt_inicio, dt_fim=date.today()):
+    def segmento_cancelamento(dt_inicio, dt_fim=date.today()):
         pass
 
     @staticmethod
-    def segmento_localidade(self, dt_inicio, dt_fim=date.today()):
+    def segmento_localidade(dt_inicio, dt_fim=date.today()):
         pass
 
     @staticmethod
-    def segmento_mrr(self, dt_inicio, dt_fim=date.today()):
+    def segmento_mrr(dt_inicio, dt_fim=date.today()):
         pass
